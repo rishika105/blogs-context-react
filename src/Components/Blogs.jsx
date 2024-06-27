@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import Spinner from "./Spinner";
 import { AppContext } from "../Context/AppContext";
-import { useEffect } from "react";
 import BlogDetails from "./BlogDetails";
 
 const Blogs = () => {

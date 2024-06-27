@@ -11,13 +11,13 @@ import { Routes, Route, useSearchParams, useLocation } from "react-router-dom";
 
 export default function App() {
   const { fetchBlogPosts } = useContext(AppContext);
-  const [searchParams,setSearchParams] = useSearchParams();
+  const searchParams = useSearchParams();
   const location = useLocation();
 
   useEffect(() => {
-    // // Fetch the inital Blogposts data
-    // fetchBlogPosts();
-    // // eslint-disable-next-line react-hooks/exhaustive-deps
+    // Fetch the inital Blogposts data
+    fetchBlogPosts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
 
     const page = searchParams.get('page') ?? 1;
 
