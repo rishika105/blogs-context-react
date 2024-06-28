@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Spinner from "./Spinner";
-import { AppContext } from "../Context/AppContext";
+import { AppContext } from "../context/AppContext";
 import BlogDetails from "./BlogDetails";
 
 const Blogs = () => {
