@@ -7,15 +7,16 @@ import CategoryPage from "./Pages/CategoryPage";
 import BlogPage from "./Pages/BlogPage";
 import { Routes, Route, useSearchParams, useLocation } from "react-router-dom";
 
+
 export default function App() {
   const { fetchBlogPosts } = useContext(AppContext);
-  const [searchParams,setSearchParams] = useSearchParams();
+  const [searchParams,setSearchParams] = useSearchParams(); // eslint-disable-line no-unused-vars
   const location = useLocation();
 
   useEffect(() => {
-    // // Fetch the inital Blogposts data
+    // Fetch the inital Blogposts data
     // fetchBlogPosts();
-    // // eslint-disable-next-line react-hooks/exhaustive-deps
+     // eslint-disable-next-line react-hooks/exhaustive-deps
 
     const page = searchParams.get('page') ?? 1;
     if(location.pathname.includes("tags")){
@@ -30,6 +31,7 @@ export default function App() {
     else{
       fetchBlogPosts(Number(page))
     }
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname,location.search]);
 
   return (

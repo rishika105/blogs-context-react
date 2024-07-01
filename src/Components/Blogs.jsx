@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Spinner from "./Spinner";
 import { AppContext } from "../context/AppContext";
-import BlogDetails from "./BlogDetails";
+import BlogDetails from "./BloggDetails";
 
 const Blogs = () => {
     //consume

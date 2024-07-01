@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState, useCallback } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 import Header from "../Components/Header";
-import BlogDetails from "../Components/BlogDetails";
+import BlogDetails from "../Components/BloggDetails";
 
 const BlogPage = () => {
   const [blog, setBlog] = useState(null);
@@ -33,6 +33,7 @@ const BlogPage = () => {
     if (blogId) {
       fetchRelatedBlogs();
     }
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
 
   return (
@@ -47,7 +48,7 @@ const BlogPage = () => {
         ) : blog ? (
           <div>
             <BlogDetails post={blog} />
-            <h2>Related Blogs</h2>
+            <h2>Releated Blogs</h2>
             {relatedblog.map((post) => (
               <div key={post.id}>
                 <BlogDetails post={post} />
@@ -61,4 +62,5 @@ const BlogPage = () => {
     </div>
   );
 };
+
 export default BlogPage;
