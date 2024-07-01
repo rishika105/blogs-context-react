@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { AppContext } from '../context/ApppContext'
+import { AppContext } from '../Context/AppContext'
 
 const Pagination = () => {
 

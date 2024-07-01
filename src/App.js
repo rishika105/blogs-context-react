@@ -1,6 +1,6 @@
 import "./App.css";
 import { useContext, useEffect } from "react";
-import { AppContext } from "./context/ApppContext";
+import { AppContext } from "./Context/AppContext";
 import Home from "./Pages/Home";
 import TagPage from "./Pages/TagPage";
 import CategoryPage from "./Pages/CategoryPage";
