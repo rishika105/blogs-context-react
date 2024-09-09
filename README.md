@@ -22,7 +22,7 @@ This project is a simple blog application built using React, styled with Tailwin
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/blogs-context-react.git
+git clone https://github.com/rishika105/blogs-context-react.git
 cd blogs-context-react
 ```
 
