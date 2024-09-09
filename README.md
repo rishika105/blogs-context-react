@@ -47,3 +47,9 @@ The project should now be running at `http://localhost:3000/`.
 3. **Routing**: Use the back button to navigate between pages.
 
 ## Screenshots
+![image](https://github.com/user-attachments/assets/7feea177-4249-44fd-9a8e-993ebd127d5b)
+
+![image](https://github.com/user-attachments/assets/26ec1a05-9944-4072-994d-262ad3c5ae33)
+
+
+
